@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Säulendiagramm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ToolContainer">
+        <button onclick="add()" id="plusbutton">+</button>
+        <Input type="text" id="txt"></Input>
+        <Input type="color" id="clr"></Input>
+    </div>
+
+    <div id="MainContainer">
+        <div id="BalkenContainer">
+        </div>
+        <div id="InputContainer">
+        </div>
+    </div>
+
+    <details id="Liste">
+        <summary style="position: absolute; top: 0;">!</summary>
+        <div id="ListContainer">
+            <button onclick="document.getElementById('Liste').open = false;" id="CloseButton">Close</button>
+        </div>
+    </details>
+
+    <script src="script.js"></script>
+</body>
+</html>
